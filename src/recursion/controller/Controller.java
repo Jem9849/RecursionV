@@ -15,13 +15,13 @@ public class Controller
 	{
 		if (message.length() == 1)
 		{
-			display.displayMessage(message);
+			display.displayText(message);
 		}
 		
 		else
 		{
 			recursivePop(message.substring(1,  message.length()));
-			display.displayMessage(message);
+			display.displayText(message);
 		}
 	}
 }
