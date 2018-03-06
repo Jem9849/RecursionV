@@ -11,6 +11,11 @@ public class Controller
 		display = new Popup();
 	}
 	
+	public void start()
+	{
+		recursivePop("Display sample");
+	}
+	
 	private void recursivePop(String message)
 	{
 		if (message.length() == 1)
